@@ -1,0 +1,51 @@
+body {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "PingFangTC", "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
+}
+
+/* .example-enter {
+  animation: flasher 0.5s;
+  animation-name: slideUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+} */
+
+.numbers__window__digit{
+  animation: counting;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes flasher {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+}
+
+@keyframes counting {
+  100% {
+    transform: translate3d(0, -10em, 0);
+  }
+}
